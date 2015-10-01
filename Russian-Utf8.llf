@@ -1,0 +1,1083 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<lang>
+  <language>Русский (RU) UTF-8</language>
+  <version>0.1.0</version>
+  <author>Pro-LDAP.ru</author>
+  <forms>
+    <AboutDlg>
+      <caption>О программе</caption>
+      <component name="BtnClose"><Caption>Закрыть</Caption></component>
+    </AboutDlg>
+    <AccountCopyDlg>
+      <component name="Label1"><Caption>Новое имя:</Caption></component>
+      <component name="Label2"><Caption>Хранилище:</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+    </AccountCopyDlg>
+    <ADPassDlg>
+      <caption>Задать пароль</caption>
+      <component name="Label1"><Caption>Новый пароль:</Caption></component>
+      <component name="Label2"><Caption>Подтверждение:</Caption></component>
+      <component name="CancelBtn"><Caption>&amp;Отмена</Caption></component>
+    </ADPassDlg>
+    <AliasDlg>
+	  <caption>Псевдоним</caption>
+      <component name="Button2"><Caption>Отмена</Caption></component>
+      <component name="GroupBox1"><Caption>Псевдоним</Caption></component>
+      <component name="Label1"><Caption>Родительская запись для псевдонима:</Caption></component>
+      <component name="Label2"><Caption>Имя псевдонима:</Caption></component>
+      <component name="Label4"><Caption>DN:</Caption></component>
+      <component name="GroupBox2"><Caption>Объект</Caption></component>
+      <component name="Label3"><Caption>DN:</Caption></component>
+    </AliasDlg>
+    <ComputerDlg>
+      <caption>Новая учётная запись компьютера</caption>
+      <component name="Label1"><Caption>Имя компьютера:</Caption></component>
+      <component name="Label2"><Caption>Описание:</Caption></component>
+      <component name="Label3"><Caption>Домен:</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+    </ComputerDlg>
+    <ConfigDlg>
+      <caption>Свойства</caption>
+      <component name="TabSheet1"><Caption>Приложение</Caption></component>
+      <component name="GroupBox1"><Caption>Дерево LDAP</Caption></component>
+      <component name="cbIdObject"><Caption>Распознавать объекты</Caption></component>
+      <component name="cbEnforceContainer"><Caption>Раскрывать только объекты-контейн.</Caption></component>
+      <component name="cbSmartDelete"><Caption>Уд. ссылки вместе с объектом</Caption></component>
+      <component name="cbTemplateIcons"><Caption>Исп. иконки из шаблонов</Caption></component>
+      <component name="GroupBox3"><Caption>Запуск</Caption></component>
+      <component name="cbConnect"><Caption>Подключаться при запуске:</Caption></component>
+      <component name="SetDefBtn"><Caption>Сделать LDAP-браузером по умол.</Caption></component>
+      <component name="CheckAssocCbk"><Caption>Всегда проверять при запуске является ли LdapAdmin браузером по умолчанию</Caption></component>
+      <component name="GroupBox4"><Caption>Поиск</Caption></component>
+      <component name="Label2"><Caption>Фильтр для быстрого поиска:</Caption></component>
+      <component name="Label4"><Caption>Фильтр:</Caption></component>
+      <component name="TabSheet2"><Caption>Шаблоны</Caption></component>
+      <component name="GroupBox2"><Caption>Файлы</Caption></component>
+      <component name="Label1"><Caption>Директории с шаблонами:</Caption></component>
+      <component name="btnAdd"><Caption>Добавить...</Caption></component>
+      <component name="btnDel"><Caption>Удалить</Caption></component>
+      <component name="GroupBox5"><Caption>Параметры</Caption></component>
+      <component name="cbTemplateExtensions"><Caption>Разрешить использовать шаблоны для расширения диалогов свойств объекта</Caption></component>
+      <component name="cbTemplateAutoload"><Caption>Автоматически загружать шаблоны при редактировании</Caption></component>
+      <component name="cbTemplateProperties"><Caption>Использовать шаблоны в качестве диалогов свойств объекта</Caption></component>
+      <component name="TabSheet3"><Caption>Локализация</Caption></component>
+      <component name="GroupBox6"><Caption>Языки</Caption></component>
+      <component name="Label5"><Caption>Директории с файлами:</Caption></component>
+      <component name="btnAddLang"><Caption>Добавить...</Caption></component>
+      <component name="btnDelLang"><Caption>Удалить</Caption></component>
+      <component name="GroupBox7"><Caption>Перекодировка</Caption></component>
+      <component name="Label3"><Caption>Таблица перекодировки символов:</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+    </ConfigDlg>
+    <ConnListFrm>
+      <caption>Подключение</caption>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+      <component name="ToolButton3"><hint>Изменить область представления</hint></component>
+      <component name="ActNewAccount"><caption>Добавить...</caption><hint>Создать новое подключение</hint></component>
+      <component name="ActDeleteAccount"><caption>Удалить</caption><hint>Удалить подключение</hint></component>
+      <component name="ActRenameAccount"><caption>Переименовать</caption><hint>Переименовать подключение</hint></component>
+      <component name="ActNewStorage"><hint>Создать новый файл-хранилище</hint></component>
+      <component name="ActOpenStorage"><hint>Открыть существующий файл-хранилище</hint></component>
+      <component name="ActCopyAccount"><Caption>Скопировать...</Caption></component>
+      <component name="ActPropertiesAccount"><Caption>Свойства...</Caption></component>
+      <component name="ActDeleteStrorage"><hint>Удалить файл-хранилище</hint></component>
+      <component name="vmSmall"><caption>Значки</caption></component>
+      <component name="vmLarge"><caption>Плитка</caption></component>
+      <component name="vmList"><caption>Список</caption></component>
+      <component name="vmTable"><caption>Таблица</caption></component>
+    </ConnListFrm>
+    <ConnPropDlg>
+      <caption>Характеристики подключения</caption>
+      <component name="Label1"><Caption>Наименование:</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+      <component name="TestBtn"><Caption>Тест подключения</Caption></component>
+      <component name="TabSheet1"><Caption>Основные</Caption></component>
+      <component name="AccountBox"><Caption>Учётные данные</Caption></component>
+      <component name="Label4"><Caption>Пользователь:</Caption></component>
+      <component name="Label5"><Caption>Пароль:</Caption></component>
+      <component name="cbAnonymous"><Caption>Анонимное подключение</Caption></component>
+      <component name="ConnectionBox"><Caption>Подключение:</Caption></component>
+      <component name="Label2"><Caption>Хост:</Caption></component>
+      <component name="Label3"><Caption>Порт:</Caption></component>
+      <component name="Label7"><Caption>Версия:</Caption></component>
+      <component name="Label6"><Caption>База:</Caption></component>
+      <component name="FetchDnBtn"><Caption>Получить DN</Caption></component>
+      <component name="rbSimpleAuth"><Caption>Простая аутентификация</Caption></component>
+      <component name="rbGssApi"><Caption>GSS-API</Caption></component>
+      <component name="cbSSL"><Caption>SSL</Caption></component>
+      <component name="cbSASL"><Caption>SASL</Caption></component>
+      <component name="cbTLS"><Caption>TLS</Caption></component>
+      <component name="TabSheet2"><Caption>Дополнительные</Caption></component>
+      <component name="GroupBox1"><Caption>Поиск</Caption></component>
+      <component name="Label15"><Caption>Размер страницы:</Caption></component>
+      <component name="Label14"><Caption>Ограничение по времени:</Caption></component>
+      <component name="Label13"><Caption>Ограничение по размеру:</Caption></component>
+      <component name="Label8"><Caption>Разыменование псевдонимов:</Caption></component>
+      <component name="cbDerefAliases"><items>Никогда,"При поиске","Если нашли",Всегда</items></component>
+      <component name="cbxPagedSearch"><Caption>По страницам</Caption></component>
+      <component name="GroupBox2"><Caption>Отсылки</Caption></component>
+      <component name="Label10"><Caption>Переход по отсылкам:</Caption></component>
+      <component name="cbReferrals"><items>Включить,Отключить</items></component>
+      <component name="Label11"><Caption>Количество хопов:</Caption></component>
+      <component name="TabSheet3"><Caption>Атрибуты</Caption></component>
+      <component name="cbxShowAttrs"><Caption>Показывать операционные атрибуты:</Caption></component>
+      <component name="btnAdd"><Caption>Добавить</Caption></component>
+      <component name="btnRemove"><Caption>Удалить</Caption></component>
+    </ConnPropDlg>
+    <CopyDlg>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+      <component name="Label1"><Caption>Сервер:</Caption></component>
+      <component name="Label2"><Caption>Имя записи:</Caption></component>
+    </CopyDlg>
+    <CustomMenuDlg>
+      <caption>Настройка меню</caption>
+      <component name="btnCancel"><Caption>Отмена</Caption></component>
+      <component name="Label1"><Caption>Текст:</Caption></component>
+      <component name="GroupBox1"><Caption>Действие</Caption></component>
+      <component name="rbDisabled"><Caption>Сделать неактивным</Caption></component>
+      <component name="rbDefaultAction"><Caption>Стандартная иконка</Caption></component>
+      <component name="rbTemplate"><Caption>Шаблон</Caption></component>
+      <component name="cbCtrl"><Caption>Ctrl</Caption></component>
+      <component name="cbShift"><Caption>Shift</Caption></component>
+      <component name="cbAlt"><Caption>Alt</Caption></component>
+    </CustomMenuDlg>
+    <EditEntryFrm>
+      <component name="Label1"><Caption>в:</Caption></component>
+      <component name="Label3"><Caption>RDN:</Caption></component>
+      <component name="SaveBtn"><hint>Сохранить и закрыть</hint></component>
+      <component name="DeleteCellsBtn"><hint>Удалить строку</hint></component>
+      <component name="SchemaCheckBtn"><hint>Показать/скрыть возможные атрибуты</hint></component>
+      <component name="UndoBtn"><hint>Отменить</hint></component>
+      <component name="CutBtn"><hint>Вырезать</hint></component>
+      <component name="CopyBtn"><hint>Копировать</hint></component>
+      <component name="PasteBtn"><hint>Вставить</hint></component>
+      <component name="DeleteBtn"><hint>Удалить</hint></component>
+      <component name="ExitBtn"><hint>Закрыть без сохранения</hint></component>
+      <component name="OcSheet"><Caption>Правка</Caption></component>
+      <component name="TemplateSheet"><Caption>Шаблоны</Caption></component>
+      <component name="mbFile"><Caption>Файл</Caption></component>
+      <component name="mbEdit"><Caption>Правка</Caption></component>
+      <component name="ActSave"><Caption>Сохранить и закрыть</Caption></component>
+      <component name="ActClose"><Caption>Закрыть</Caption></component>
+      <component name="ActDeleteRow"><Caption>Удалить строку</Caption></component>
+      <component name="ActUndo"><Caption>Отменить</Caption></component>
+      <component name="ActCut"><Caption>Вырезать</Caption></component>
+      <component name="ActCopy"><Caption>Копировать</Caption></component>
+      <component name="ActPaste"><Caption>Вставить</Caption></component>
+      <component name="ActDelete"><Caption>Удалить</Caption></component>
+      <component name="ActLoadFile"><Caption>Загрузить из файла...</Caption></component>
+      <component name="ActSaveFile"><Caption>Сохранить в файл...</Caption></component>
+      <component name="ActBinView"><Caption>Двоичный вид...</Caption></component>
+      <component name="ActSchemaCheck"><Caption>Проверка схемы данных</Caption></component>
+      <component name="ActFindInSchema"><Caption>Найти в схеме данных...</Caption></component>
+      <component name="ActPicView"><Caption>Посмотреть изображение...</Caption></component>
+      <component name="ActCertView"><Caption>Посмотреть сертификат...</Caption></component>
+      <component name="TemplateListBox"><items>Все</items></component>
+    </EditEntryFrm>
+    <ExportDlg>
+      <caption>Экспорт LDIF</caption>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+      <component name="Label1"><Caption>Имя файла:</Caption></component>
+      <component name="Label4"><Caption>Экспорт:</Caption></component>
+      <component name="SubDirsCbk"><Caption>Включая дочерние записи</Caption></component>
+      <component name="Label2"><Caption>Ход выполнения:</Caption></component>
+      <component name="Label5"><Caption>Экспорт:</Caption></component>
+    </ExportDlg>
+    <GroupDlg>
+      <caption>Новая группа</caption>
+      <component name="Label1"><Caption>Имя:</Caption></component>
+      <component name="Label2"><Caption>Описание:</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+      <component name="TabSheet1"><Caption>Члены</Caption></component>
+      <component name="UserList">
+        <columns>
+          <column><caption>Имя</caption></column>
+          <column><caption>Путь</caption></column>
+        </columns>
+      </component>
+      <component name="AddUserBtn"><Caption>Добавить</Caption></component>
+      <component name="RemoveUserBtn"><Caption>Удалить</Caption></component>
+      <component name="TabSheet2"><Caption>Samba</Caption></component>
+      <component name="Label3"><Caption>Домен Samba:</Caption></component>
+      <component name="Label4"><Caption>NT-Rid:</Caption></component>
+      <component name="Label5"><Caption>Отображаемое имя:</Caption></component>
+      <component name="RadioGroup1"><Caption>Тип группы:</Caption><items>Доменная,Локальная,Встроенная:</items></component>
+      <component name="cbSambaGroup"><Caption>Группа домена Samba</Caption></component>
+      <component name="cbBuiltin"><items>Администраторы домена,Пользователи домена,Гости домена</items></component>
+    </GroupDlg>
+    <HexView>
+      <caption>Двоичное представление</caption>
+      <component name="Label1"><Caption>Десятичный:</Caption></component>
+      <component name="Label3"><Caption>Двоичный:</Caption></component>
+      <component name="Label2"><Caption>Адрес:</Caption></component>
+      <component name="Label4"><Caption>Размер:</Caption></component>
+      <component name="pbHex"><Caption>Шестнадцатеричный вид</Caption></component>
+      <component name="pbDecimal"><Caption>Десятичный вид</Caption></component>
+      <component name="Button2"><Caption>Закрыть</Caption></component>
+    </HexView>
+    <HostDlg>
+      <caption>Новый хост</caption>
+      <component name="NameLabel"><Caption>Имя хоста:</Caption></component>
+      <component name="IPLabel"><Caption>IP-адрес:</Caption></component>
+      <component name="Label2"><Caption>Описание:</Caption></component>
+      <component name="GroupBox1"><Caption>Дополнительные имена хоста:</Caption></component>
+      <component name="AddHostBtn"><Caption>Добавить</Caption></component>
+      <component name="EditHostBtn"><Caption>Изменить</Caption></component>
+      <component name="DelHostBtn"><Caption>Удалить</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+    </HostDlg>
+    <ImportDlg>
+      <caption>Импорт LDIF</caption>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+      <component name="Label1"><Caption>Имя файла:</Caption></component>
+      <component name="Label6"><Caption>Сохранить отклонённые записи в:</Caption></component>
+      <component name="cbStopOnError"><Caption>Приостановить импорт при возникновении ошибки</Caption></component>
+      <component name="Label2"><Caption>Ход выполнения:</Caption></component>
+      <component name="Label5"><Caption>Импорт:</Caption></component>
+      <component name="errLabel"><Caption>Ошибка!</Caption></component>
+    </ImportDlg>
+    <InputDlg>
+      <component name="Eingabe"><Caption /></component>
+      <component name="CancelBtn"><caption>Отмена</caption></component>
+    </InputDlg>
+    <LocalityDlg>
+      <caption>Новое местоположение</caption>
+      <component name="NameLabel"><Caption>Имя:</Caption></component>
+      <component name="Label18"><Caption>Улица:</Caption></component>
+      <component name="Label19"><Caption>Штат/Область:</Caption></component>
+      <component name="Label1"><Caption>Описание:</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+    </LocalityDlg>
+    <MailGroupDlg>
+      <caption>Новый список рассылки</caption>
+      <component name="Label1"><Caption>Имя:</Caption></component>
+      <component name="Label2"><Caption>Описание:</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+      <component name="TabSheet1"><Caption>Члены</Caption></component>
+      <component name="UserList">
+        <columns>
+          <column><caption>Имя</caption></column>
+          <column><caption>Путь</caption></column>
+        </columns>
+      </component>
+      <component name="AddUserBtn"><Caption>Добавить</Caption></component>
+      <component name="RemoveUserBtn"><Caption>Удалить</Caption></component>
+      <component name="TabSheet2"><Caption>Адреса E-Mail</Caption></component>
+      <component name="Label3"><Caption>Адрес маршрутизации почты:</Caption></component>
+      <component name="AddMailBtn"><Caption>Добавить</Caption></component>
+      <component name="EditMailBtn"><Caption>Изменить</Caption></component>
+      <component name="DelMailBtn"><Caption>Удалить</Caption></component>
+    </MailGroupDlg>
+    <MainFrm>
+      <component name="Label1"><Caption>Найти:</Caption></component>
+      <component name="mbNew"><Caption>Добавить</Caption></component>
+      <component name="pbNew"><Caption>Добавить</Caption></component>
+      <component name="mbStart"><Caption>Главная</Caption></component>
+      <component name="mbEdit"><Caption>Правка</Caption></component>
+      <component name="mbView"><Caption>Вид</Caption></component>
+      <component name="mbTools"><Caption>Инструменты</Caption></component>
+      <component name="mbLanguage"><Caption>Язык</Caption></component>
+      <component name="mbGetTemplates"><Caption>Получить шаблоны...</Caption></component>
+      <component name="ActConnect"><Caption>Подключение...</Caption><hint>Подключиться к каталогу</hint></component>
+      <component name="ActDisconnect"><Caption>Отключение...</Caption><hint>Отключиться от каталога</hint></component>
+      <component name="ActExit"><Caption>Выход</Caption><hint>Выйти из LdapAdmin</hint></component>
+      <component name="UndoBtn"><hint>Отменить</hint></component>
+      <component name="RedoBtn"><hint>Повторить</hint></component>
+      <component name="ActSchema"><Caption>Просмотр схемы данных...</Caption><hint>Просмотр схемы данных</hint></component>
+      <component name="ActImport"><Caption>Импорт...</Caption></component>
+      <component name="ActExport"><Caption>Экспорт...</Caption></component>
+      <component name="ActPreferences"><Caption>Предпочтения...</Caption></component>
+      <component name="ActAbout"><Caption>О программе...</Caption></component>
+      <component name="ActPassword"><Caption>Задать пароль...</Caption></component>
+      <component name="ActEditEntry"><Caption>Редактировать запись...</Caption><hint>Редактировать запись</hint></component>
+      <component name="ActCopyEntry"><Caption>Копировать...</Caption></component>
+      <component name="ActMoveEntry"><Caption>Переместить...</Caption></component>
+      <component name="ActDeleteEntry"><Caption>Удалить</Caption><hint>Удалить запись</hint></component>
+      <component name="ActRefresh"><Caption>Обновить</Caption><hint>Обновить</hint></component>
+      <component name="ActSearch"><Caption>Поиск...</Caption><hint>Поиск</hint></component>
+      <component name="ActProperties"><Caption>Свойства объекта</Caption><hint>Свойства объекта</hint></component>
+      <component name="ActViewBinary"><Caption>Двоичный вид...</Caption></component>
+      <component name="ActValues"><Caption>Показать значения</Caption></component>
+      <component name="ActEntries"><Caption>Показать записи</Caption></component>
+	  <component name="mbViewStyle"><Caption>Вид</Caption></component>
+      <component name="ActIconView"><Caption>Плитка</Caption></component>
+	  <component name="ActSmallView"><Caption>Значки</Caption></component>
+      <component name="ActListView"><Caption>Список</Caption></component>
+      <component name="ActOptions"><Caption>Свойства...</Caption></component>
+      <component name="ActLocateEntry"><Caption>Найти запись (быстрый поиск)...</Caption></component>
+      <component name="ActCopy"><Caption>Копировать</Caption></component>
+      <component name="ActCopyDn"><Caption>Скопировать DN в буфер обмена</Caption></component>
+      <component name="ActCopyValue"><Caption>Копировать значение</Caption></component>
+      <component name="ActCopyName"><Caption>Копировать имя атрибута</Caption></component>
+      <component name="ActRenameEntry"><Caption>Переименовать...</Caption></component>
+      <component name="ActFindInSchema"><Caption>Найти в схеме данных...</Caption></component>
+      <component name="ActModifySet"><Caption>Пакетная обработка...</Caption><hint>Изменить значения атрибутов для нескольких объектов</hint></component>
+      <component name="ActEditValue"><Caption>Редактировать значение...</Caption></component>
+      <component name="ActAlias"><Caption>Создать псевдоним...</Caption></component>
+      <component name="ActCustomizeMenu"><Caption>Настроить меню...</Caption></component>
+      <component name="pbViewCert"><Caption>Посмотреть сертификат...</Caption></component>
+      <component name="pbViewPicture"><Caption>Посмотреть изображение...</Caption></component>
+	  <component name="mbInfo"><Caption>О программе</Caption></component>
+      <component name="ValueListView">
+        <columns>
+          <column><caption>Атрибут</caption></column>
+          <column><caption>Значение</caption></column>
+          <column><caption>Тип</caption></column>
+          <column><caption>Размер</caption></column>
+        </columns></component>
+    </MainFrm>
+    <OuDlg>
+	  <caption>Подразделение</caption>
+      <component name="NameLabel"><Caption>Имя:</Caption></component>
+      <component name="Label18"><Caption>Улица:</Caption></component>
+      <component name="Label19"><Caption>Штат/область:</Caption></component>
+      <component name="Label24"><Caption>Почт. индекс:</Caption></component>
+      <component name="Label31"><Caption>Город:</Caption></component>
+      <component name="Label1"><Caption>Описание:</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+    </OuDlg>
+    <PasswordDlg>
+      <caption>Задать пароль</caption>
+      <component name="Label1"><Caption>Новый пароль:</Caption></component>
+      <component name="Label2"><Caption>Подтверждение:</Caption></component>
+      <component name="lbMethod"><Caption>Метод защиты:</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+      <component name="cbSambaPassword"><Caption>Пароль Samba</Caption></component>
+      <component name="cbPosixPassword"><Caption>Пароль Posix</Caption></component>
+    </PasswordDlg>
+    <PickAttributesDlg>
+      <caption>Выбор атрибутов</caption>
+      <component name="SrcLabel"><Caption>Имеющиеся:</Caption></component>
+      <component name="DstLabel"><Caption>Используемые:</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+    </PickAttributesDlg>
+    <PickupDlg>
+      <caption>Выбор членов</caption>
+	  <component name="FilterLbl"><Caption>Фильтр:</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+    </PickupDlg>
+    <ViewPicFrm>
+      <component name="btnSave"><hint>Сохранить в каталог и закрыть</hint></component>
+      <component name="btnToFile"><hint>Сохранить в файл</hint></component>
+      <component name="btnFromFile"><hint>Загрузить из файла</hint></component>
+      <component name="btnCopy"><hint>Скопировать в буфер обмена</hint></component>
+      <component name="btnPaste"><hint>Вставить из буфера обмена</hint></component>
+      <component name="btnFitToPicture"><hint>Окно по размеру изображения</hint></component>
+      <component name="btnResize"><hint>Изображение по размеру окна</hint></component>
+    </ViewPicFrm>
+    <PrefDlg>
+      <caption>Настройка предпочтений</caption>
+      <component name="tsPosix"><Caption>Posix</Caption></component>
+      <component name="gbDefaults"><Caption>Настройки по умолчанию:</Caption></component>
+      <component name="lblHomeDir"><Caption>Домашний каталог:</Caption></component>
+      <component name="lblLoginShell"><Caption>Оболочка по умолч.:</Caption></component>
+      <component name="lblUsername"><Caption>Имя пользователя:</Caption></component>
+      <component name="lblDisplayname"><Caption>Отображаемое имя:</Caption></component>
+      <component name="gbGroups"><Caption>Группы:</Caption></component>
+      <component name="lblPosixGroup"><Caption>Posix-группа:</Caption></component>
+      <component name="SetBtn"><Caption>Задать...</Caption></component>
+      <component name="cbxExtendGroups"><Caption>Расширить Posix-группы объект. классом:</Caption></component>
+      <component name="tsID"><Caption>Настройки ID</Caption></component>
+      <component name="gbUserLimits"><Caption>Ограничения ID пользователя:</Caption></component>
+      <component name="lblFirstUId"><Caption>Начальный UID:</Caption></component>
+      <component name="lblLastUid"><Caption>Конечный UID:</Caption></component>
+      <component name="gbGroupLimits"><Caption>Ограничения ID группы:</Caption></component>
+      <component name="lblFirstGid"><Caption>Начальный GID:</Caption></component>
+      <component name="lblLastGid"><Caption>Конечный GID:</Caption></component>
+      <component name="gbId"><Caption>Генерация ID:</Caption><items>"Не создавать ID пользователя и группы","Создавать случайные ID пользователя и группы (по умолчанию)","Создавать ID пользователя и группы последовательно"</items></component>
+      <component name="gbSambaDefaults"><Caption>Настройки по умолчанию:</Caption></component>
+      <component name="lblHomeShare"><Caption>Домашняя папка:</Caption></component>
+      <component name="lblProfilePath"><Caption>Путь к профилю:</Caption></component>
+      <component name="lblHomeDrive"><Caption>Метка тома:</Caption></component>
+      <component name="lblScript"><Caption>Скрипт:</Caption></component>
+      <component name="cbxLMPasswords"><Caption>Пароли LANMAN</Caption></component>
+      <component name="lblNetbios"><Caption>Имя NETBIOS:</Caption></component>
+      <component name="lblDomainName"><Caption>Имя домена:</Caption></component>
+      <component name="tsMail"><Caption>E-Mail</Caption></component>
+      <component name="gbMailDefaults"><Caption>Настройки по умолчанию:</Caption></component>
+      <component name="lblMD"><Caption>Стандартный почт. ящик:</Caption></component>
+      <component name="lblMA"><Caption>Стандартный адрес E-Mail:</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+      <component name="BtnWizard"><Caption>Мастер настроек...</Caption></component>
+    </PrefDlg>
+    <PrefWizDlg>
+      <caption>Мастер настроек профиля</caption>
+      <component name="Label1"><Caption>Для продолжения нажмите "Далее"...</Caption></component>
+      <component name="Label2"><Caption>Этот мастер поможет вам создать настройки по умолчанию для этого соединения.</Caption></component>
+      <component name="Label3"><Caption>Выберите формат для имени пользователя:</Caption></component>
+      <component name="Label4"><Caption>Введите NETBIOS-имя сервера и имя домена Samba:</Caption></component>
+      <component name="Label5"><Caption>NETBIOS-имя сервера:</Caption></component>
+      <component name="Label6"><Caption>Имя домена Samba:</Caption></component>
+      <component name="Label7"><Caption>Введите ваш почтовый домен и адрес сервера с почт. ящиками (только для Postfix):</Caption></component>
+      <component name="Label8"><Caption>Почтовый домен:</Caption></component>
+      <component name="Label9"><Caption>Сервер с почтовыми ящиками:</Caption></component>
+      <component name="Label11"><Caption>Выберите формат для отображаемого имени:</Caption></component>
+      <component name="ListView1">
+        <columns>
+          <column><caption>Тип</caption></column>
+          <column><caption>Пример</caption></column>
+          <column><caption>Шаблон</caption></column>
+        </columns>
+        <items>
+          <item><caption>Имя.Фамилия</caption><subitems>ivan.petrov,%f.%l</subitems></item>
+          <item><caption>Фамилия.Имя</caption><subitems>petrov.ivan,%l.%f</subitems></item>
+          <item><caption>Первая буква имени+Фамилия</caption><subitems>ipetron,%F%l</subitems></item>
+          <item><caption>Первая буква фамилии+Имя</caption><subitems>pivan,%L%f</subitems></item>
+          <item><caption>Фамилия</caption><subitems>petrov,%l</subitems></item>
+          <item><caption>Имя</caption><subitems>ivan,%f</subitems></item>
+        </items></component>
+      <component name="ListView2">
+        <columns>
+          <column><caption>Тип</caption></column>
+          <column><caption>Пример</caption></column>
+          <column><caption>Шаблон</caption></column>
+        </columns>
+        <items>
+          <item><caption>Фамилия, Имя</caption><subitems>"Petrov, Ivan","%l, %f"</subitems></item>
+          <item><caption>Имя Фамилия</caption><subitems>"Ivan Petrov","%f %l"</subitems></item>
+          <item><caption>Первая буква имени. Фамилия</caption><subitems>"I. Petrov", "%F. %l"</subitems></item>
+        </items></component>
+      <component name="btnNext"><Caption>Далее &gt;</Caption></component>
+      <component name="btnBack"><Caption>&lt; Назад</Caption></component>
+      <component name="btnCancel"><Caption>Отмена</Caption></component>
+    </PrefWizDlg>
+    <SambaAdvancedDlg>
+      <caption>Расширенные настройки Samba</caption>
+      <component name="Label1"><Caption>Разрешённые рабочие станции:</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+      <component name="FlagsGroup"><Caption>Дополнительные флаги Samba:</Caption></component>
+      <component name="cbNoExpire"><Caption>Срок дейст. пароля не огранич.</Caption></component>
+      <component name="cbDomTrust"><Caption>Trust-аккаунт домена</Caption></component>
+      <component name="cbHomeReq"><Caption>Требуется домашняя папка</Caption></component>
+      <component name="cbServerTrust"><Caption>Trust-аккаунт сервера</Caption></component>
+      <component name="AddBtn"><Caption>Добавить...</Caption></component>
+      <component name="RemoveBtn"><Caption>Удалить</Caption></component>
+      <component name="GroupBox1"><Caption>Срок дейст. Samba-аккаунта истекает:</Caption></component>
+      <component name="rbNever"><Caption>Никогда</Caption></component>
+      <component name="rbAt"><Caption>Дата:</Caption></component>
+    </SambaAdvancedDlg>
+    <SchemaDlg>
+	  <caption>Просмотр схемы данных</caption>
+      <component name="UndoBtn"><hint>Назад</hint></component>
+      <component name="RedoBtn"><hint>Вперёд</hint></component>
+      <component name="Label1"><Caption>Поиск:</Caption></component>
+      <component name="btnSave"><hint>Экспортировать схему данных</hint></component>
+      <component name="btnClose"><hint>Закрыть</hint></component>
+      <component name="WholeWordsCbx"><Caption>Слова целиком</Caption></component>
+      <component name="pmCopy"><Caption>Копировать</Caption></component>
+      <component name="pmUndo"><Caption>Восстановить</Caption></component>
+      <component name="pmOpen"><Caption>Открыть</Caption></component>
+      <component name="pmOpenNewTab"><Caption>Открыть в новой вкладке</Caption></component>
+    </SchemaDlg>
+    <SearchFrm>
+      <caption>Поиск</caption>
+      <component name="Label5"><Caption>Путь:</Caption></component>
+      <component name="PathBtn"><Caption>Выбрать...</Caption></component>
+      <component name="TabSheet1"><Caption>Поиск</Caption></component>
+      <component name="Label6"><Caption>Имя:</Caption></component>
+      <component name="Label7"><Caption>E-Mail:</Caption></component>
+      <component name="TabSheet2"><Caption>Отбор</Caption></component>
+      <component name="Label1"><Caption>Фильтр:</Caption></component>
+      <component name="SaveFilterBtn"><Caption>Сохранить</Caption></component>
+      <component name="DeleteFilterBtn"><Caption>Удалить</Caption></component>
+      <component name="TabSheet3"><Caption>Опции</Caption></component>
+      <component name="Label4"><Caption>Атрибуты:</Caption></component>
+      <component name="Label2"><Caption>Диапазон:</Caption></component>
+      <component name="Label3"><Caption>Разымен. псевдон.:</Caption></component>
+      <component name="edAttrBtn"><Caption>Выбрать...</Caption></component>
+      <component name="cbSearchLevel"><items>"Только база поиска","Следующий уровень","Всё поддерево"</items></component>
+      <component name="cbDerefAliases"><left>360</left><width>170</width><items>Никогда,"В базе поиска","В найденных",Всегда</items></component>
+      <component name="StartBtn"><Caption>Начать</Caption></component>
+      <component name="ClearAllBtn"><height>56</height><WordWrap>true</WordWrap><Caption>Очистить результаты</Caption></component>
+      <component name="btnSearch"><hint>Поиск</hint></component>
+      <component name="btnModify"><hint>Пакетная обработка</hint></component>
+      <component name="ActStart"><Caption>Начать</Caption><hint>Начать поиск</hint></component>
+      <component name="ActGoto"><Caption>Перейти...</Caption><hint>Показать запись в дереве каталога</hint></component>
+      <component name="ActProperties"><Caption>Свойства...</Caption><hint>Редактировать свойства объекта</hint></component>
+      <component name="ActSave"><Caption>Сохранить</Caption><hint>Сохранить результаты поиска</hint></component>
+      <component name="ActEdit"><Caption>Редактировать запись...</Caption><hint>Редактировать запись</hint></component>
+      <component name="ActClose"><Caption>Закрыть</Caption><hint>Закрыть</hint></component>
+      <component name="ActClearAll"><Caption>Очистить результаты</Caption></component>
+    </SearchFrm>
+    <TransportDlg>
+      <caption>Новая транспортная таблица</caption>
+	  <component name="Label1"><Caption>Сервер</Caption></component>
+	  <component name="Label2"><Caption>Транспорт</Caption></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+    </TransportDlg>
+    <UserDlg>
+      <caption>Новый пользователь</caption>
+      <component name="AccountSheet"><Caption>Учётная запись</Caption></component>
+      <component name="Label1"><Caption>Имя:</Caption></component>
+      <component name="Label2"><Caption>Фамилия:</Caption></component>
+      <component name="Label3"><Caption>Отображаемое имя:</Caption></component>
+      <component name="Label4"><Caption>Имя пользователя:</Caption></component>
+      <component name="Label5"><Caption>Инициалы:</Caption></component>
+      <component name="Label9"><Caption>Домашний каталог:</Caption></component>
+      <component name="Label12"><Caption>Gecos:</Caption></component>
+      <component name="Label14"><Caption>Login shell:</Caption></component>
+      <component name="GroupBox1"><Caption>Свойства учётной записи</Caption></component>
+      <component name="cbShadow"><Caption>Shadow-аккаунт</Caption></component>
+      <component name="cbMail"><Caption>Mail-аккаунт</Caption></component>
+      <component name="cbSamba"><Caption>Samba-аккаунт</Caption></component>
+      <component name="RadioGroup1"><Caption>Срок действия учётной записи истекает</Caption></component>
+      <component name="ShadowPropertiesGroup"><Caption>Свойства shadow-пароля (сроки в днях)</Caption></component>
+      <component name="Label35"><Caption>Мин. пром. между сменами:</Caption></component>
+      <component name="Label37"><Caption>Предупреждать за:</Caption></component>
+      <component name="Label38"><Caption>Последнее изменение:</Caption></component>
+      <component name="Label39"><Caption>Макс. пром. между сменами:</Caption></component>
+      <component name="Label40"><Caption>Срок действия пароля после устаревания:</Caption></component>
+      <component name="RadioGroup1"><items>Никогда,Дата:</items></component>
+      <component name="SambaSheet"><Caption>Samba</Caption></component>
+      <component name="Label6"><Caption>Скрипт:</Caption></component>
+      <component name="Label7"><Caption>Метка тома:</Caption></component>
+      <component name="Label8"><Caption>Путь к профилю:</Caption></component>
+      <component name="Label13"><Caption>Домашняя папка:</Caption></component>
+      <component name="Label21"><Caption>Описание:</Caption></component>
+      <component name="Label36"><Caption>Домен:</Caption></component>
+      <component name="cbPwdMustChange"><Caption>Потребовать смену пароля при след. входе</Caption></component>
+      <component name="cbPwdCantChange"><Caption>Запретить смену пароля пользователем</Caption></component>
+      <component name="BtnAdvanced"><Caption>Расширен.</Caption></component>
+      <component name="cbAccntDisabled"><Caption>Отключить учётную запись</Caption></component>
+      <component name="MailSheet"><Caption>Mail</Caption></component>
+      <component name="Label10"><Caption>Почтовый ящик:</Caption></component>
+      <component name="Label11"><Caption>Адреса E-Mail:</Caption></component>
+      <component name="AddMailBtn"><Caption>Добавить</Caption></component>
+      <component name="EditMailBtn"><Caption>Изменить</Caption></component>
+      <component name="DelMailBtn"><Caption>Удалить</Caption></component>
+      <component name="OfficeSheet"><Caption>Рабочие</Caption></component>
+      <component name="Label15"><Caption>Пейджер:</Caption></component>
+      <component name="Label18"><Caption>Адрес:</Caption></component>
+      <component name="Label19"><Caption>Штат/область:</Caption></component>
+      <component name="Label22"><Caption>Телефон:</Caption></component>
+      <component name="Label24"><Caption>Почт. индекс:</Caption></component>
+      <component name="Label25"><Caption>Офис:</Caption></component>
+      <component name="Label27"><Caption>Должность:</Caption></component>
+      <component name="Label29"><Caption>Компания:</Caption></component>
+      <component name="Label30"><Caption>Факс:</Caption></component>
+      <component name="Label31"><Caption>Город:</Caption></component>
+      <component name="PrivateSheet"><Caption>Персональные</Caption></component>
+      <component name="Label17"><Caption>Адрес:</Caption></component>
+      <component name="Label23"><Caption>Факс:</Caption></component>
+      <component name="Label26"><Caption>Телефон:</Caption></component>
+      <component name="Label28"><Caption>Мобильный телефон:</Caption></component>
+	  <component name="Label41"><Caption>Фотография:</Caption></component>
+	  <component name="ImagePanel"><Caption>Изображение Jpeg</Caption></component>
+      <component name="OpenPictureBtn"><Caption>Открыть...</Caption></component>
+      <component name="DeleteJpegBtn"><Caption>Удалить</Caption></component>
+      <component name="GroupSheet"><Caption>Членство в группах</Caption></component>
+      <component name="Label34"><Caption>Член групп:</Caption></component>
+      <component name="Label33"><Caption>Основная группа:</Caption></component>
+      <component name="AddGroupBtn"><Caption>Добавить</Caption></component>
+      <component name="RemoveGroupBtn"><Caption>Удалить</Caption></component>
+      <component name="PrimaryGroupBtn"><Caption>Задать...</Caption></component>
+      <component name="cbxGroups"><items>"Все группы","Posix-группы","Samba-группы","Mail-группы"</items></component>
+      <component name="CancelBtn"><Caption>Отмена</Caption></component>
+    </UserDlg>
+  </forms>
+  <strings>
+    <s1>&amp;Добавить</s1>
+    <s2>Добавить адрес</s2>
+    <s3>Значение</s3>
+    <s4>s4-&amp;View:</s4>
+    <s5>Просмотр изображения: </s5>
+    <s6>s6-Warning</s6>
+    <s7>s7-&amp;Retry</s7>
+    <s8>Домен Samba</s8>
+    <s9>Использовать удостоверяющие данные текущего пользователя</s9>
+    <s10>Сохранить в LDAP</s10>
+    <s11>База поиска</s11>
+    <s12>Результаты поиска:</s12>
+    <s13>Выберите родительскую запись для псевдонима</s13>
+    <s14>Выберите запись</s14>
+    <s15>Сервер: %s</s15>
+    <s16>Задать пароль...</s16>
+    <s17>Пропустить</s17>
+    <s18>Проп. все</s18>
+    <s19>s19-&amp;Smart delete</s19>
+    <s20>Адрес SMTP:</s20>
+    <s21>s21-Second name</s21>
+    <s22>Текст</s22>
+    <s23>Новое подменю</s23>
+    <s24>Новое значение</s24>
+    <s25>Далее</s25>
+    <s26>Объектный класс</s26>
+    <s27>&amp;OK</s27>
+    <s28>Старое значение</s28>
+    <s29>Операция:</s29>
+    <s30>s30-Parent directory:</s30>
+    <s31>Пароль:</s31>
+    <s32>Путь: %s</s32>
+    <s33>Выберите учётные записи</s33>
+    <s34>Выберите группы</s34>
+    <s35>Подготовка...</s35>
+    <s36>Выполнение:</s36>
+    <s37>Свойства %s</s37>
+    <s38>Внутреннее</s38>
+    <s39>Шестнадц.:</s39>
+    <s40>Домашний каталог</s40>
+    <s41>Имя хоста:</s41>
+    <s42>Изображение</s42>
+    <s43>Информация</s43>
+    <s44>IP-адрес</s44>
+    <s45>s45-Maildrop</s45>
+    <s46>Выполнено.</s46>
+    <s47>Пропущено.</s47>
+    <s48>s48-More...</s48>
+    <s49>Переместить %s в...</s49>
+    <s50>Запись перемещается...</s50>
+    <s51>Имя</s51>
+    <s52>&lt;&lt;добавить&gt;&gt;</s52>
+    <s53>Новая запись</s53>
+    <s54>Новый элемент</s54>
+    <s55>s55-Decimal:</s55>
+    <s56>&amp;Удалить</s56>
+    <s57>s57-Deleting:</s57>
+    <s58>Описание</s58>
+    <s59>s59-&amp;Details</s59>
+    <s60>s60-&amp;Edit</s60>
+    <s61>s61-Edit Address</s61>
+    <s62>Изменить запись</s62>
+    <s63>Изменить хост</s63>
+    <s64>Редактировать значение</s64>
+    <s65>Английский</s65>
+    <s66>Введите новое значение:</s66>
+    <s67>Введите пароль</s67>
+    <s68>Введите RDN:</s68>
+    <s69>Ошибка</s69>
+    <s70>Завершить</s70>
+    <s71>Добавить атрибут...</s71>
+    <s72>Новое подключение</s72>
+    <s73>Добавить хост</s73>
+    <s74>s74-Add value</s74>
+    <s75>Анонимное подключение</s75>
+    <s76>LDAP Admin</s76>
+    <s77>Атрибут</s77>
+    <s78>Имя атрибута:</s78>
+    <s79>Бинарный</s79>
+    <s80>s80-&amp;Browse...</s80>
+    <s81>Отмена</s81>
+    <s82>Сертификат</s82>
+    <s83>Закрыть</s83>
+    <s84>s84-Confirmation</s84>
+    <s85>s85-Copying...</s85>
+    <s86>Скопировать %s в...</s86>
+    <s87>Новые...</s87>
+    <s88>Запись...</s88>
+    <s89>Пользователя...</s89>
+    <s90>Компьютер...</s90>
+    <s91>Группу...</s91>
+    <s92>Список рассылки...</s92>
+    <s93>Транспортную таблицу...</s93>
+    <s94>Подразделение организации (OU)...</s94>
+    <s95>Хост...</s95>
+    <s96>Местоположение...</s96>
+    <s97>Группу уникальных имён...</s97>
+    <s98>Псевдоним...</s98>
+    <s99>s99-Invalid (Unclosed) parameter!</s99>
+    <s100>s100-Unclosed string!</s100>
+    <s101>s101-Unknown value type.\nkey:%s\nvalue:%s\"</s101>
+    <s102>Неподдерживаемый метод аутентификации: %s!</s102>
+    <s103>s103-Unsupported script type: </s103>
+    <s104>s104-User break!</s104>
+    <s105>s105-Can not write to read only property!</s105>
+    <s106>Ldif-файл, Windows-формат (CR/LF) (*.ldif)|*.ldif|Ldif-файл, Unix-формат (только LF) (*.ldif)|*.ldif|CSV (текст с разделителями) (*.csv)|*.csv|XML (*.xml)|*.xml</s106>
+    <s107>Текстовый файл (*.txt)|*.txt</s107>
+    <s108>В поле "%s" должно быть значение!</s108>
+    <s109>s109-%s is required!</s109>
+    <s110>s110-This account has been locked down by SAMBA server! Do you want to reset the autolock flag and enable it now?</s110>
+    <s111>s111-Reading: %d objects retrieved. Press ESC to abort...</s111>
+    <s112>Шифрование SASL нельзя использовать поверх соединения SSL!</s112>
+    <s113>s113-Can't find SubschemaSubentry</s113>
+    <s114>s114-Procedure \"%s\" could not be located.</s114>
+    <s115>s115-Property '%s' is not an event!</s115>
+    <s116>s116-'%s' does not support '%s' event!</s116>
+    <s117>s117-Unsupported parameter type!</s117>
+    <s118>s118-Could not convert set to integer!</s118>
+    <s119>Выбор этого варианта может привести к значительному увеличению сетевого трафика при работе с большими базами данных. Используйте его, только если вам ДЕЙСТВИТЕЛЬНО требуются последовательные ID, в противном случае лучше использовать вариант по умолчанию (случайные ID).</s119>
+    <s120>%s\n\rПропустить эту запись?</s120>
+    <s121>s121-Stop TLS Failed! The connection will be closed due to unrecoverable error.</s121>
+    <s122>s122-time format</s122>
+    <s123>Слишком много аргументов!</s123>
+    <s124>s124-Cannot move: Source and destination paths overlap!</s124>
+    <s125>На Windows Vista и выше для успешного выполнения этой операции требуется, чтобы LdapAdmin был запущен с более высокими привилегиями!</s125>
+    <s126>s126-Connection error: could not locate active connection!</s126>
+    <s127>Не выполнять эту проверку при запуске.</s127>
+    <s128>s128-Pool depleted! No more available free id's for %s!</s128>
+    <s129>Создание ID следует отключать, только если у вас настроено назначение ID на стороне сервера. В противном случае вы не сможете создавать пользователей или группы.</s129>
+    <s130>s130-You have to enter the unique name (rdn) for this entry!</s130>
+    <s131>s131-Can't load LDAP schema</s131>
+    <s132>s132-Not enough arguments!</s132>
+    <s133>s133-number</s133>
+    <s134>%d объектов</s134>
+    <s135>Пароли не совпадают!</s135>
+    <s136>Пароль для %s:</s136>
+    <s137>s137-Property is read only!</s137>
+    <s138>s138-Regexp validation failed!</s138>
+    <s139>Должен быть определён как минимум один адрес E-Mail!</s139>
+    <s140>s140-Line %d: Empty line may not be folded!</s140>
+    <s141>s141-Internal error: Invalid LDIF mode!</s141>
+    <s142>Строка %d: отсутствует ":".</s142>
+    <s143>Строка %d: ожидалось dn, а обнаружено %s!</s143>
+    <s144>Достигнут конец файла!</s144>
+    <s145>Неверное значение версии: %s!</s145>
+    <s146>%d объектов не может быть импортировано!</s146>
+    <s147>Неправильный URL!</s147>
+    <s148>Строка %d: Неверное имя атрибута, ожидалось \"%s\", а обнаружено \"%s\"!</s148>
+    <s149>Строка %d: Неверный changetype \"%s\"!</s149>
+    <s150>Строка %d: Неверная операция \"%s\"!</s150>
+    <s151>Строка %d: ожидалось \"%s\", а обнаружено \"%s\"!</s151>
+    <s152>Успешно импортировано %d объектов.</s152>
+    <s153>s153-URL method not supported!</s153>
+    <s154>s154-A template name must not be empty!</s154>
+    <s155>s155-The template \"%s\" which is assigned to this action could not be located!</s155>
+    <s156>LdapAdmin не является вашим LDAP-браузером по умолчанию.\nСделать его таковым?</s156>
+    <s157>Файл '%s' уже существует, заменить?</s157>
+    <s158>s158-Cannot GetProcAddress of %s.</s158>
+    <s159>s159-Selected primary group is not a Samba group or it does not map to user domain. Do you still want to continue?</s159>
+    <s160>s160-You have to enter at least one mail address for this group!</s160>
+    <s161>s161-You have to enter a name for this group!</s161>
+    <s162>s162-"\%s\" is not a valid %s!</s162>
+    <s163>s163-integer number</s163>
+    <s164>s164-Invalid Argument Index: %d</s164>
+    <s165>s165-Invalid LDAP version in command line: %s</s165>
+    <s166>Неверный или неподдерживаемый тип фильтра!</s166>
+    <s167>s167-Invalid value %s for &lt;%s&gt;!</s167>
+    <s168>Неверный формат времени!</s168>
+    <s169>Неверный формат URL!</s169>
+    <s170>Ошибка LDAP: %s!</s170>
+    <s171>Ошибка LDAP! %s: %s.</s171>
+    <s172>s172-The certificate is self-signed root certificate.</s172>
+    <s173>Класс %s не найден!</s173>
+    <s174>Обрабатывается %d объектов.</s174>
+    <s175>Потомков: %d</s175>
+    <s176>Удалить запись "%s"?</s176>
+    <s177>Удалить подключение "%s"?</s177>
+    <s178>Удалить %d записей?</s178>
+    <s179>s179-date format</s179>
+    <s180>"%s"\n\rЭта запись каталога не конечная (содержит дочерние записи). Удалить все эти записи рекурсивно?</s180>
+    <s181>Удалить этот пункт меню?</s181>
+    <s182>Удалить это подменю?</s182>
+    <s183>s183-Attribute %s is the naming value of this entry! Do you want to delete it?</s183>
+    <s184>s184-Shortcut '%s' is already assigned to '%s' menu item!</s184>
+    <s185>s185-Empty argument!</s185>
+    <s186>s186-Error extracting method name!</s186>
+    <s187>s187-Error setting %s event: %s event type is not supported!</s187>
+    <s188>Успешное подключение.</s188>
+    <s189>s189-Do you want to abort the script?</s189>
+    <s190>s190-Account with this name already exists.\n\rDo you want to overwrite it?</s190>
+    <s191>s191-You have to enter a name for this connection!</s191>
+    <s192>Скопировать %s в %s?</s192>
+    <s193>Переместить %s в %s?</s193>
+    <s194>s194-This storage does not allow to keep the password!</s194>
+    <s195>s195-The server you are trying to connect to is using a certificate which could not be verified!\n\r\n\r%s\n\rDo you want to proceed?</s195>
+    <s196>s196-The name of the security certificate is invalid or does not match the server name!</s196>
+    <s197>s197-Signature check failed!</s197>
+    <s198>s198-The security certificate has expired or is not yet valid!</s198>
+    <s199>s199-Issuer certificate not found!</s199>
+    <s200>s200-Unknown</s200>
+    <s201>Пользователь: %s</s201>
+    <s202>Имя пользователя</s202>
+    <s203>s203-User Prompt</s203>
+    <s204>s204-The file \"%s\" is not an LdapAdmin accounts file!</s204>
+    <s205>Плохо сформированный XML.</s205>
+    <s206>s206-The \"%s\" is expected, but the \"%s\" is received</s206>
+    <s207>s207-Unexpected closing tag \"%s\"</s207>
+    <s208>Не выбран принтер по умолчанию</s208>
+    <s209>Меню '%s' уже используется другой формой</s209>
+    <s210>Изображение:</s210>
+    <s211> (%dx%d)</s211>
+    <s212>Предпросмотр</s212>
+    <s213>Невозможно открыть AVI</s213>
+    <s214>s214-Docked control must have a name.</s214>
+    <s215>s215-Error removing control from dock tree</s215>
+    <s216>s216- - Dock zone not found</s216>
+    <s217>s217- - Dock zone has no control</s217>
+    <s218>s218-Multiselect mode must be on for this feature</s218>
+    <s219>s219-Separator</s219>
+    <s220>s220-Error settting %s.Count</s220>
+    <s221>s221-Listbox (%s) style must be virtual in roder to set Count</s221>
+    <s222>s222-No OnGetItem event handler assigned</s222>
+    <s223>s223-Inhaltsverzeichnis konnte nicht gefunden werden</s223>
+    <s224>s224-Right</s224>
+    <s225>s225-Down</s225>
+    <s226>Ins</s226>
+    <s227>Del</s227>
+    <s228>Shift+</s228>
+    <s229>Ctrl+</s229>
+    <s230>Alt+</s230>
+    <s231>(Нет)</s231>
+    <s232>s232-Value must between %d and %d</s232>
+    <s233>Все</s233>
+    <s234>s234-Unable insert a line</s234>
+    <s235>s235-Invalid clipboard format</s235>
+    <s236>s236-clipboard does not support icons</s236>
+    <s237>s237-cannot open clipboard</s237>
+    <s238>s238-Default</s238>
+    <s239>s239-Text exceeds memo capacity</s239>
+    <s240>s240-&amp;Retry</s240>
+    <s241>Игнорировать</s241>
+    <s242>Все</s242>
+    <s243>Нет для всех</s243>
+    <s244>Да для всех</s244>
+    <s245>Bksp</s245>
+    <s246>Tab</s246>
+    <s247>Esc</s247>
+    <s248>Enter</s248>
+    <s249>Space</s249>
+    <s250>pgUp</s250>
+    <s251>pgDn</s251>
+    <s252>End</s252>
+    <s253>Home</s253>
+    <s254>Left</s254>
+    <s255>Up</s255>
+    <s256>s256-Metafiles</s256>
+    <s257>s257-Enhanced Metafiles</s257>
+    <s258>s258-Icons</s258>
+    <s259>s259-Bitmaps</s259>
+    <s260>s260-Invalid input value</s260>
+    <s261>s261-Invalid input value. Use escape key to abandon changes.</s261>
+    <s262>Предупреждение</s262>
+    <s263>Ошибка</s263>
+    <s264>Информация</s264>
+    <s265>Подтвердить выполнение операции</s265>
+    <s266>Да</s266>
+    <s267>Нет</s267>
+    <s268>OK</s268>
+    <s269>Отмена</s269>
+    <s270>&amp;Помощь</s270>
+    <s271>&amp;Отмена</s271>
+    <s272>s272-Operation not support on selecte printer.</s272>
+    <s273>s273-%s an %s</s273>
+    <s274>s274-GroupIndex cannot be less than a previous menu item's GroupIndex</s274>
+    <s275>Не могу создать форму. В настоящий момент нет активных MDI-форм</s275>
+    <s276>s276-A control cannot have itself as its parent</s276>
+    <s277>OK</s277>
+    <s278>Отмена</s278>
+    <s279>s279-&amp;Yes</s279>
+    <s280>s280-&amp;No</s280>
+    <s281>s281-&amp;Help</s281>
+    <s282>&amp;Закрыть</s282>
+    <s283>s283-&amp;Ignore</s283>
+    <s284>s284-&amp;Retry</s284>
+    <s285>s285-Abort</s285>
+    <s286>s286-&amp;All</s286>
+    <s287>s287-cannot drag a form</s287>
+    <s288>s288-Error creating window device context</s288>
+    <s289>s289-Error creating window class</s289>
+    <s290>s290-cannot focus a disabled or invisible window</s290>
+    <s291>s291-Control '%s' has no parent window</s291>
+    <s292>s292-parent given is not a parent of '%s'</s292>
+    <s293>s293-cannot hide an MDI child Form</s293>
+    <s294>s294-cannot change Visible in OnShow or OnHide</s294>
+    <s295>s295-Cannot make a visible window modal</s295>
+    <s296>s296-Scrollbar property out of range</s296>
+    <s297>s297-%s property out of range</s297>
+    <s298>s298-Menu index out of range</s298>
+    <s299>s299-Menu inserted twice</s299>
+    <s300>s300-Sub-menu is not in menu</s300>
+    <s301>s301-Not enough timers available</s301>
+    <s302>s302-Printer is not currently printing</s302>
+    <s303>s303-Pringing in progress</s303>
+    <s304>s304-Metafile is not valid</s304>
+    <s305>s305-Invalid pixel format</s305>
+    <s306>s306-Invalid image</s306>
+    <s307>s307-Scan line index out of range</s307>
+    <s308>s308-Cannot change the size of an icon</s308>
+    <s309>s309-Invalid Operation on TOleGraphic</s309>
+    <s310>s310-Unbekannte picture file extension (.%s)</s310>
+    <s311>s311-Unsupported clipboard format</s311>
+    <s312>s312-Out of system resoureces.</s312>
+    <s313>s313-Canvas does not allow drawing</s313>
+    <s314>s314-Invalid image size</s314>
+    <s315>s315-Invalid imageList</s315>
+    <s316>s316-Unable to Replace Image</s316>
+    <s317>s317-Invalid ImageList-Index</s317>
+    <s318>s318-Faild to read ImageList data from stream</s318>
+    <s319>s319-Faild to write ImageList data from stream</s319>
+    <s320>s320-Property is read-only</s320>
+    <s321>s321-Failed to create key %s</s321>
+    <s322>s322-Failed to get data for '%s'</s322>
+    <s323>s323-Failed to set data for '%s'</s323>
+    <s324>s324-Resource %s not found</s324>
+    <s325>s325-%s.Seek not implemented</s325>
+    <s326>s326-Operation not allowed on sorted list</s326>
+    <s327>s327-Too many rows or columns deleted</s327>
+    <s328>s328-%s not in a class registration group</s328>
+    <s329>s329-Property %s does not exist.</s329>
+    <s330>s330-Stream write error</s330>
+    <s331>s331-Tab index out of bounds</s331>
+    <s332>s332-Tab position incompatible with current tab style.</s332>
+    <s333>s333-Tab style incompatible with current tab position.</s333>
+    <s334>s334-Bitmap image is not valid</s334>
+    <s335>s335-Icon image is not valid</s335>
+    <s336>s336-Grid index out of</s336>
+    <s337>s337-Invalid stream format</s337>
+    <s338>s338-'%s' is not a valid component name</s338>
+    <s339>s339-Invalid property value</s339>
+    <s340>s340-Invalid property element: %s</s340>
+    <s341>s341-Invalid property path</s341>
+    <s342>s342-Invalid property type: %s</s342>
+    <s343>s343-Invalid property value</s343>
+    <s344>s344-Invalid data type for '%s'</s344>
+    <s345>s345-Cannot insert or delete rows from grid</s345>
+    <s346>s346-List capacity out of(%d) </s346>
+    <s347>s347-boundsList count out of bounds(%d)</s347>
+    <s348>s348-List index out of bounds(%d)</s348>
+    <s349>s349-Out of memory while expanding memory stream</s349>
+    <s350>s350-Error reading %s%s%s: %s</s350>
+    <s351>s351-Stream read error</s351>
+    <s352>s352-Ancestor for  '%s'  not found</s352>
+    <s353>s353-assign a %s to a %s </s353>
+    <s354>s354-Bits index out of range</s354>
+    <s355>s355-Can''t write to a read-only resource stream</s355>
+    <s356>s356-CheckSynchronize called from thread $%x, which is NOT the main thread.</s356>
+    <s357>s357-Class %s not found</s357>
+    <s358>s358-A class named %s already exists</s358>
+    <s359>s359-List does not allow duplicates ($0%x)</s359>
+    <s360>s360-A component named %s already exists</s360>
+    <s361>s361-String list does not allow duplicates</s361>
+    <s362>s362-Cannot create file "%s". %s</s362>
+    <s363>s363-Fixed column count must be less than column count</s363>
+    <s364>s364-Fixed row count must be less than row count</s364>
+    <s365>s365-Cannot open file "%s". %s</s365>
+    <s366>s366-Grid too large for operation</s366>
+    <s367>Окт</s367>
+    <s368>Ноя</s368>
+    <s369>Дек</s369>
+    <s370>Вс</s370>
+    <s371>Пн</s371>
+    <s372>Вт</s372>
+    <s373>Ср</s373>
+    <s374>Чт</s374>
+    <s375>Пт</s375>
+    <s376>Сб</s376>
+    <s377>Воскресенье</s377>
+    <s378>Понедельник</s378>
+    <s379>Вторник</s379>
+    <s380>Среда</s380>
+    <s381>Четверг</s381>
+    <s382>Пятница</s382>
+    <s383>Суббота</s383>
+    <s384>Июн</s384>
+    <s385>Июл</s385>
+    <s386>Авг</s386>
+    <s387>Сен</s387>
+    <s388>Окт</s388>
+    <s389>Ноя</s389>
+    <s390>Дек</s390>
+    <s391>Январь</s391>
+    <s392>Февраль</s392>
+    <s393>Март</s393>
+    <s394>Апрель</s394>
+    <s395>Май</s395>
+    <s396>Июнь</s396>
+    <s397>Июль</s397>
+    <s398>Август</s398>
+    <s399>Сентябрь</s399>
+    <s400>s400-Operation not supported</s400>
+    <s401>s401-Unexpected variant error</s401>
+    <s402>s402-External exception %x</s402>
+    <s403>s403-Assertion failed</s403>
+    <s404>s404-Interface not supported</s404>
+    <s405>s405-Exception in safecall method</s405>
+    <s406>s406-%s (%s, line %d)</s406>
+    <s407>s407-Abstract Error</s407>
+    <s408>s408-Access violation at address %p in module ''%s''. %s of address %p</s408>
+    <s409>Системная ошибка. Код: %d.\r\n%s</s409>
+    <s410>s410-A call to an OS function failed</s410>
+    <s411>Янв</s411>
+    <s412>Фев</s412>
+    <s413>Мар</s413>
+    <s414>Апр</s414>
+    <s415>Май</s415>
+    <s416>s416-No argument for format '%s'</s416>
+    <s417>s417-Variant method calls not supported</s417>
+    <s418>s418-Read</s418>
+    <s419>s419-Write</s419>
+    <s420>s420-Error creating variant or safe array</s420>
+    <s421>s421-Variant or safe array index out of bounds</s421>
+    <s422>s422-Variant or safe array is locked</s422>
+    <s423>s423-Invalid variant type conversion</s423>
+    <s424>s424-Invalid variant operation</s424>
+    <s425>s425-Invalid NULL variant operation</s425>
+    <s426>s426-Invalid variant operation (%s%.8x)\n%s</s426>
+    <s427>s427-Could not convert variant of type (%s) into type (%s)</s427>
+    <s428>s428-Overflow while converting variant of type (%s) into type (%s)</s428>
+    <s429>s429-Variant overflow</s429>
+    <s430>s430-Invalid Argument</s430>
+    <s431>s431-Invalid Variant-Type</s431>
+    <s432>s432-Integer overflow</s432>
+    <s433>s433-Invalid floating point operation</s433>
+    <s434>s434-Floating point division by zero</s434>
+    <s435>s435-Floating point overflow</s435>
+    <s436>s436-Floating point underflow</s436>
+    <s437>s437-Invalid pointer operation</s437>
+    <s438>s438-Invalid class typecast</s438>
+    <s439>s439-Access violation at address %p. %s of address %p</s439>
+    <s440>s440-Access violation</s440>
+    <s441>Переполнение стека</s441>
+    <s442>s442-Control-C hit</s442>
+    <s443>s443-Privileged instruction</s443>
+    <s444>Операция прервана</s444>
+    <s445>s445-Exception %s in Module %s at %p.\r\n%s%s\r\n</s445>
+    <s446>Ошибка приложения</s446>
+    <s447>s447-Format '%s' invalid or incompatible with argument</s447>
+    <s448>'%s' - неверное целое число</s448>
+    <s449>'%s' - неверное число с плавающей точкой</s449>
+    <s450>'%s' - неверные дата/время</s450>
+    <s451>s451-Invalid argument to time encode</s451>
+    <s452>s452-Invalid argument to date encode</s452>
+    <s453>Недостаточно памяти</s453>
+    <s454>Ошибка ввода/вывода %d</s454>
+    <s455>Файл не найден</s455>
+    <s456>Неверное имя файла</s456>
+    <s457>Слишком много открытых файлов</s457>
+    <s458>Доступ к файлу запрещён</s458>
+    <s459>s459-Read beyond end of file</s459>
+    <s460>Переполнение диска</s460>
+    <s461>s461-Invalid numeric input</s461>
+    <s462>Деление на ноль</s462>
+    <s463>s463-Range check error</s463>
+    <s464>s464-%d is an invalid PageIndex value.  PageIndex must be between 0 and %d</s464>
+    <s465>s465-This control requires version 4.70 or greater of COMCTL32.DLL</s465>
+    <s466>s466-Date exceeds maximum of %s</s466>
+    <s467>s467-Date is less than minimum of %s</s467>
+    <s468>s468-You must be in ShowCheckbox mode to set to this date</s468>
+    <s469>s469-Failed to set calendar date or time</s469>
+    <s470>s470-Failed to set maximum selection range</s470>
+    <s471>s471-Failed to set calendar min/max range</s471>
+    <s472>s472-Failed to set calendar selected range</s472>
+    <s473>s473-Failed to clear tab control</s473>
+    <s474>s474-Failed to delete tab at index d%</s474>
+    <s475>s475-Failed to retrieve tab at index %d</s475>
+    <s476>s476-Failed to get object at index %d</s476>
+    <s477>s477-Failed to set tab "%s" at index %d</s477>
+    <s478>s478-Failed to set object at index %d</s478>
+    <s479>s479-MultiLine must be True when TabPosition is tpLeft or tpRight</s479>
+    <s480>Неверный индекс</s480>
+    <s481>s481-Unable to insert an item</s481>
+    <s482>s482-Invalid owner</s482>
+    <s483>s483-RichEdit line insertion error</s483>
+    <s484>s484-Failed to Load Stream</s484>
+    <s485>s485-Failed to Save Stream</s485>
+    <s486>s486-%s is already associated with %s</s486>
+    <s487>Ошибка OLE %.8x</s487>
+    <s488>s488-Method '%s' not supported by automation object</s488>
+    <s489>s489-Variant does not reference an automation object</s489>
+    <s490>s490-Dispatch methods do not support more than 64 parameters.</s490>
+    <s491>DCOM не установлен</s491>
+    <s492>JPEG Image File</s492>
+    <s493>s493-Cannot change the size of a JPEG image</s493>
+    <s494>Ошибка JPEG #%d</s494>
+    <s495>s495-OLE control activation failed</s495>
+    <s496>s496-Could not obtain OLE control window handle</s496>
+    <s497>s497-License information for %s is invalid</s497>
+    <s498>s498-License information for %s not found. You cannot use this control in design mode</s498>
+    <s499>s499-Unable to retrieve a pointer to a running object registered with OLE for %s/%s</s499>
+    <s500>s500-No help found for %s</s500>
+    <s501>s501-No context-sensitive help installed</s501>
+    <s502>s502-No topic-based help system installed.</s502>
+    <s503>Выберите членов</s503>
+  </strings>
+</lang>
