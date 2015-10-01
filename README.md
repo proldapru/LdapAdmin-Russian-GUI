@@ -1,2 +1,4 @@
-# LdapAdmin-Rusian-GUI
-Руссификация интерфейса программы LdapAdmin
+# LdapAdmin-Russian-GUI
+Russian interface for LdapAdmin
+
+Русификация интерфейса программы LdapAdmin
