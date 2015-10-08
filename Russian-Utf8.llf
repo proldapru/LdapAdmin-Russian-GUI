@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <lang>
   <language>Русский (RU) UTF-8</language>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <author>Pro-LDAP.ru</author>
   <forms>
     <AboutDlg>
@@ -983,7 +983,7 @@
     <s405>s405-Exception in safecall method</s405>
     <s406>s406-%s (%s, line %d)</s406>
     <s407>s407-Abstract Error</s407>
-    <s408>s408-Access violation at address %p in module ''%s''. %s of address %p</s408>
+    <s408>Нарушение прав доступа по адресу %p в модуле ''%s''. %s адреса %p</s408>
     <s409>Системная ошибка. Код: %d.\r\n%s</s409>
     <s410>s410-A call to an OS function failed</s410>
     <s411>Янв</s411>
@@ -993,7 +993,7 @@
     <s415>Май</s415>
     <s416>s416-No argument for format '%s'</s416>
     <s417>s417-Variant method calls not supported</s417>
-    <s418>s418-Read</s418>
+    <s418>Чтение</s418>
     <s419>s419-Write</s419>
     <s420>s420-Error creating variant or safe array</s420>
     <s421>s421-Variant or safe array index out of bounds</s421>
