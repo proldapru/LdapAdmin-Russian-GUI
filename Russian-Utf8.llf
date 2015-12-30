@@ -1,12 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <lang>
   <language>Русский (RU) UTF-8</language>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <author>Pro-LDAP.ru</author>
   <forms>
     <AboutDlg>
       <caption>О программе</caption>
       <component name="BtnClose"><Caption>Закрыть</Caption></component>
+      <component name="Label2"><Caption>Версия:</Caption></component>
+      <component name="Label3"><Caption>Автор:</Caption></component>
+      <component name="Label4"><Caption>Сайт:</Caption></component>
     </AboutDlg>
     <AccountCopyDlg>
       <component name="Label1"><Caption>Новое имя:</Caption></component>
