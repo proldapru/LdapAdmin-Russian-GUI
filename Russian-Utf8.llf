@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <lang>
   <language>Русский (RU) UTF-8</language>
-  <version>0.1.2</version>
+  <version>0.1.3</version>
   <author>Pro-LDAP.ru</author>
   <forms>
     <AboutDlg>
@@ -32,6 +32,13 @@
       <component name="GroupBox2"><Caption>Объект</Caption></component>
       <component name="Label3"><Caption>DN:</Caption></component>
     </AliasDlg>
+	<BookmarkDlg>
+	  <caption>Закладки</caption>
+	  <component name="lblBookmark"><Caption>Закладка:</Caption></component>
+	  <component name="btnAdd"><Caption>Добавить</Caption></component>
+	  <component name="btnRemove"><Caption>Удалить</Caption></component>
+	  <component name="btnClose"><Caption>Закрыть</Caption></component>
+	</BookmarkDlg>
     <ComputerDlg>
       <caption>Новая учётная запись компьютера</caption>
       <component name="Label1"><Caption>Имя компьютера:</Caption></component>
@@ -286,6 +293,7 @@
       <component name="ActExit"><Caption>Выход</Caption><hint>Выйти из LdapAdmin</hint></component>
       <component name="UndoBtn"><hint>Отменить</hint></component>
       <component name="RedoBtn"><hint>Повторить</hint></component>
+	  <component name="ActBookmark"><Caption>Закладки...</Caption></component>
       <component name="ActSchema"><Caption>Просмотр схемы данных...</Caption><hint>Просмотр схемы данных</hint></component>
       <component name="ActImport"><Caption>Импорт...</Caption></component>
       <component name="ActExport"><Caption>Экспорт...</Caption></component>
