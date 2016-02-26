@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <lang>
   <language>Русский (RU) UTF-8</language>
-  <version>0.1.3</version>
+  <version>0.1.4</version>
   <author>Pro-LDAP.ru</author>
   <forms>
     <AboutDlg>
@@ -173,6 +173,8 @@
       <component name="ActUndo"><Caption>Отменить</Caption></component>
       <component name="ActCut"><Caption>Вырезать</Caption></component>
       <component name="ActCopy"><Caption>Копировать</Caption></component>
+	  <component name="ActCopyName"><Caption>Копировать имя атрибута</Caption></component>
+	  <component name="ActCopyValue"><Caption>Копировать значение</Caption></component>
       <component name="ActPaste"><Caption>Вставить</Caption></component>
       <component name="ActDelete"><Caption>Удалить</Caption></component>
       <component name="ActLoadFile"><Caption>Загрузить из файла...</Caption></component>
@@ -190,8 +192,8 @@
       <component name="Label1"><Caption>Имя файла:</Caption></component>
       <component name="Label4"><Caption>Экспорт:</Caption></component>
       <component name="SubDirsCbk"><Caption>Включая дочерние записи</Caption></component>
-      <component name="Label2"><Caption>Ход выполнения:</Caption></component>
-      <component name="Label5"><Caption>Экспорт:</Caption></component>
+      <component name="Label2"><Caption>Выполнено:</Caption></component>
+      <component name="Label5"><Caption>Запись:</Caption></component>
     </ExportDlg>
     <GroupDlg>
       <caption>Новая группа</caption>
@@ -242,9 +244,10 @@
       <component name="Label1"><Caption>Имя файла:</Caption></component>
       <component name="Label6"><Caption>Сохранить отклонённые записи в:</Caption></component>
       <component name="cbStopOnError"><Caption>Приостановить импорт при возникновении ошибки</Caption></component>
-      <component name="Label2"><Caption>Ход выполнения:</Caption></component>
-      <component name="Label5"><Caption>Импорт:</Caption></component>
+      <component name="Label2"><Caption>Выполнено:</Caption></component>
+      <component name="Label5"><Caption>Запись:</Caption></component>
       <component name="errLabel"><Caption>Ошибка!</Caption></component>
+	  <component name="DetailBtn"><Caption>Подробности &gt;&gt;</Caption><width>110</width></component>
     </ImportDlg>
     <InputDlg>
       <component name="Eingabe"><Caption /></component>
@@ -320,6 +323,7 @@
       <component name="ActCopyDn"><Caption>Скопировать DN в буфер обмена</Caption></component>
       <component name="ActCopyValue"><Caption>Копировать значение</Caption></component>
       <component name="ActCopyName"><Caption>Копировать имя атрибута</Caption></component>
+	  <component name="ActGoTo"><Caption>Перейти...</Caption></component>
       <component name="ActRenameEntry"><Caption>Переименовать...</Caption></component>
       <component name="ActFindInSchema"><Caption>Найти в схеме данных...</Caption></component>
       <component name="ActModifySet"><Caption>Пакетная обработка...</Caption><hint>Изменить значения атрибутов для нескольких объектов</hint></component>
@@ -365,6 +369,7 @@
     <PickupDlg>
       <caption>Выбор членов</caption>
 	  <component name="FilterLbl"><Caption>Фильтр:</Caption></component>
+	  <component name="FilterEdit"><left>75</left></component>
       <component name="CancelBtn"><Caption>Отмена</Caption></component>
     </PickupDlg>
     <ViewPicFrm>
@@ -548,7 +553,7 @@
       <component name="Label36"><Caption>Домен:</Caption></component>
       <component name="cbPwdMustChange"><Caption>Потребовать смену пароля при след. входе</Caption></component>
       <component name="cbPwdCantChange"><Caption>Запретить смену пароля пользователем</Caption></component>
-      <component name="BtnAdvanced"><Caption>Расширен.</Caption></component>
+      <component name="BtnAdvanced"><Caption>Расширенные</Caption><width>90</width></component>
       <component name="cbAccntDisabled"><Caption>Отключить учётную запись</Caption></component>
       <component name="MailSheet"><Caption>Mail</Caption></component>
       <component name="Label10"><Caption>Почтовый ящик:</Caption></component>
@@ -578,6 +583,12 @@
       <component name="DeleteJpegBtn"><Caption>Удалить</Caption></component>
       <component name="GroupSheet"><Caption>Членство в группах</Caption></component>
       <component name="Label34"><Caption>Член групп:</Caption></component>
+	  <component name="GroupList">
+        <columns>
+          <column><caption>Имя</caption></column>
+          <column><caption>Описание</caption></column>
+        </columns>
+	  </component>
       <component name="Label33"><Caption>Основная группа:</Caption></component>
       <component name="AddGroupBtn"><Caption>Добавить</Caption></component>
       <component name="RemoveGroupBtn"><Caption>Удалить</Caption></component>
@@ -631,7 +642,7 @@
     <s42>Изображение</s42>
     <s43>Информация</s43>
     <s44>IP-адрес</s44>
-    <s45>s45-Maildrop</s45>
+    <s45>Почтовый ящик</s45>
     <s46>Выполнено.</s46>
     <s47>Пропущено.</s47>
     <s48>s48-More...</s48>
@@ -645,9 +656,9 @@
     <s56>&amp;Удалить</s56>
     <s57>s57-Deleting:</s57>
     <s58>Описание</s58>
-    <s59>s59-&amp;Details</s59>
+    <s59>Подробности</s59>
     <s60>s60-&amp;Edit</s60>
-    <s61>s61-Edit Address</s61>
+    <s61>Изменить адрес</s61>
     <s62>Изменить запись</s62>
     <s63>Изменить хост</s63>
     <s64>Редактировать значение</s64>
@@ -745,7 +756,7 @@
     <s156>LdapAdmin не является вашим LDAP-браузером по умолчанию.\nСделать его таковым?</s156>
     <s157>Файл '%s' уже существует, заменить?</s157>
     <s158>s158-Cannot GetProcAddress of %s.</s158>
-    <s159>s159-Selected primary group is not a Samba group or it does not map to user domain. Do you still want to continue?</s159>
+    <s159>Выбранная в качестве основной группа не является группой Samba, либо не принадлежит домену пользователя. Продолжить?</s159>
     <s160>s160-You have to enter at least one mail address for this group!</s160>
     <s161>s161-You have to enter a name for this group!</s161>
     <s162>s162-"\%s\" is not a valid %s!</s162>
