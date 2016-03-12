@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <lang>
   <language>Русский (RU) UTF-8</language>
-  <version>0.1.4</version>
+  <version>0.1.5</version>
   <author>Pro-LDAP.ru</author>
   <forms>
     <AboutDlg>
@@ -91,6 +91,7 @@
       <component name="ActCopyAccount"><Caption>Скопировать...</Caption></component>
       <component name="ActPropertiesAccount"><Caption>Свойства...</Caption></component>
       <component name="ActDeleteStrorage"><hint>Удалить файл-хранилище</hint></component>
+	  <component name="ViewBtn"><hint>Изменить вид</hint></component>
       <component name="vmSmall"><caption>Значки</caption></component>
       <component name="vmLarge"><caption>Плитка</caption></component>
       <component name="vmList"><caption>Список</caption></component>
@@ -493,7 +494,9 @@
       <component name="Label6"><Caption>Имя:</Caption></component>
       <component name="Label7"><Caption>E-Mail:</Caption></component>
       <component name="TabSheet2"><Caption>Отбор</Caption></component>
-      <component name="Label1"><Caption>Фильтр:</Caption></component>
+      <component name="Label1"><Caption>Фильтр:</Caption><Left>0</Left></component>
+	  <component name="Memo1"><Left>43</Left></component>
+	  <component name="cbFilters"><Left>43</Left></component>
       <component name="SaveFilterBtn"><Caption>Сохранить</Caption></component>
       <component name="DeleteFilterBtn"><Caption>Удалить</Caption></component>
       <component name="TabSheet3"><Caption>Опции</Caption></component>
@@ -503,6 +506,13 @@
       <component name="edAttrBtn"><Caption>Выбрать...</Caption></component>
       <component name="cbSearchLevel"><items>"Только база поиска","Следующий уровень","Всё поддерево"</items></component>
       <component name="cbDerefAliases"><left>360</left><width>170</width><items>Никогда,"В базе поиска","В найденных",Всегда</items></component>
+	  <component name="TabSheet4"><Caption>Регулярные выражения</Caption></component>
+	  <component name="Label8"><Caption>Шаблон:</Caption></component>
+	  <component name="btnSaveRegEx"><Caption>Сохранить</Caption></component>
+	  <component name="btnDeleteRegEx"><Caption>Удалить</Caption></component>
+	  <component name="cbxReGreedy"><Caption>"Жадный" режим</Caption><width>110</width></component>
+	  <component name="cbxReCase"><Caption>Учитывать регистр</Caption><width>120</width></component>
+	  <component name="cbxReMultiline"><Caption>Многострочные соовпадения</Caption><width>170</width></component>
       <component name="StartBtn"><Caption>Начать</Caption></component>
       <component name="ClearAllBtn"><height>56</height><WordWrap>true</WordWrap><Caption>Очистить результаты</Caption></component>
       <component name="btnSearch"><hint>Поиск</hint></component>
@@ -616,7 +626,7 @@
     <s16>Задать пароль...</s16>
     <s17>Пропустить</s17>
     <s18>Проп. все</s18>
-    <s19>s19-&amp;Smart delete</s19>
+    <s19>Рекурсивное удаление</s19>
     <s20>Адрес SMTP:</s20>
     <s21>s21-Second name</s21>
     <s22>Текст</s22>
@@ -707,7 +717,7 @@
     <s107>Текстовый файл (*.txt)|*.txt</s107>
     <s108>В поле "%s" должно быть значение!</s108>
     <s109>s109-%s is required!</s109>
-    <s110>s110-This account has been locked down by SAMBA server! Do you want to reset the autolock flag and enable it now?</s110>
+    <s110>Эта учетная запись была заблокирована сервером SAMBA! Хотите сбросить флаг автоматической блокировки и разблокировать учётную запись?</s110>
     <s111>s111-Reading: %d objects retrieved. Press ESC to abort...</s111>
     <s112>Шифрование SASL нельзя использовать поверх соединения SSL!</s112>
     <s113>s113-Can't find SubschemaSubentry</s113>
@@ -721,13 +731,13 @@
     <s121>s121-Stop TLS Failed! The connection will be closed due to unrecoverable error.</s121>
     <s122>s122-time format</s122>
     <s123>Слишком много аргументов!</s123>
-    <s124>s124-Cannot move: Source and destination paths overlap!</s124>
+    <s124>Перемещение невозможно: пути источника и цели пересекаются!</s124>
     <s125>На Windows Vista и выше для успешного выполнения этой операции требуется, чтобы LdapAdmin был запущен с более высокими привилегиями!</s125>
     <s126>s126-Connection error: could not locate active connection!</s126>
     <s127>Не выполнять эту проверку при запуске.</s127>
-    <s128>s128-Pool depleted! No more available free id's for %s!</s128>
+    <s128>Пул идентификаторов исчерпан! Нет свободных идентификаторов для %s!</s128>
     <s129>Создание ID следует отключать, только если у вас настроено назначение ID на стороне сервера. В противном случае вы не сможете создавать пользователей или группы.</s129>
-    <s130>s130-You have to enter the unique name (rdn) for this entry!</s130>
+    <s130>Необходимо ввести уникальное имя (RDN) для этой записи!</s130>
     <s131>s131-Can't load LDAP schema</s131>
     <s132>s132-Not enough arguments!</s132>
     <s133>s133-number</s133>
@@ -750,7 +760,7 @@
     <s150>Строка %d: Неверная операция \"%s\"!</s150>
     <s151>Строка %d: ожидалось \"%s\", а обнаружено \"%s\"!</s151>
     <s152>Успешно импортировано %d объектов.</s152>
-    <s153>s153-URL method not supported!</s153>
+    <s153>Указанный URL-метод не поддерживается!</s153>
     <s154>s154-A template name must not be empty!</s154>
     <s155>s155-The template \"%s\" which is assigned to this action could not be located!</s155>
     <s156>LdapAdmin не является вашим LDAP-браузером по умолчанию.\nСделать его таковым?</s156>
@@ -780,18 +790,18 @@
     <s180>"%s"\n\rЭта запись каталога не конечная (содержит дочерние записи). Удалить все эти записи рекурсивно?</s180>
     <s181>Удалить этот пункт меню?</s181>
     <s182>Удалить это подменю?</s182>
-    <s183>s183-Attribute %s is the naming value of this entry! Do you want to delete it?</s183>
+    <s183>Данное значение атрибута %s образует уникальное имя этой записи! Хотите удалить это значение?</s183>
     <s184>s184-Shortcut '%s' is already assigned to '%s' menu item!</s184>
     <s185>s185-Empty argument!</s185>
     <s186>s186-Error extracting method name!</s186>
     <s187>s187-Error setting %s event: %s event type is not supported!</s187>
     <s188>Успешное подключение.</s188>
     <s189>s189-Do you want to abort the script?</s189>
-    <s190>s190-Account with this name already exists.\n\rDo you want to overwrite it?</s190>
-    <s191>s191-You have to enter a name for this connection!</s191>
+    <s190>Подключение с этим именем уже существует.\n\rХотите его перезаписать?</s190>
+    <s191>Необходимо задать имя для этого подключения!</s191>
     <s192>Скопировать %s в %s?</s192>
     <s193>Переместить %s в %s?</s193>
-    <s194>s194-This storage does not allow to keep the password!</s194>
+    <s194>Данный тип хранилища подключений не позволяет сохранять пароли!</s194>
     <s195>s195-The server you are trying to connect to is using a certificate which could not be verified!\n\r\n\r%s\n\rDo you want to proceed?</s195>
     <s196>s196-The name of the security certificate is invalid or does not match the server name!</s196>
     <s197>s197-Signature check failed!</s197>
@@ -801,10 +811,10 @@
     <s201>Пользователь: %s</s201>
     <s202>Имя пользователя</s202>
     <s203>s203-User Prompt</s203>
-    <s204>s204-The file \"%s\" is not an LdapAdmin accounts file!</s204>
+    <s204>Файл \"%s\" не является файлом-хранилищем подключений LdapAdmin!</s204>
     <s205>Плохо сформированный XML.</s205>
-    <s206>s206-The \"%s\" is expected, but the \"%s\" is received</s206>
-    <s207>s207-Unexpected closing tag \"%s\"</s207>
+    <s206>Ожидалось \"%s\", а получено \"%s\"</s206>
+    <s207>Непредвиденный закрывающийся тег \"%s\"</s207>
     <s208>Не выбран принтер по умолчанию</s208>
     <s209>Меню '%s' уже используется другой формой</s209>
     <s210>Изображение:</s210>
@@ -962,7 +972,7 @@
     <s362>s362-Cannot create file "%s". %s</s362>
     <s363>s363-Fixed column count must be less than column count</s363>
     <s364>s364-Fixed row count must be less than row count</s364>
-    <s365>s365-Cannot open file "%s". %s</s365>
+    <s365>Невозможно открыть файл "%s". %s</s365>
     <s366>s366-Grid too large for operation</s366>
     <s367>Окт</s367>
     <s368>Ноя</s368>
